@@ -1,0 +1,112 @@
+/* 初始化CSS样式 */
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+dl,
+dt,
+dd,
+tr,
+th,
+p,
+img,
+input,
+button,
+a,
+span,
+i,
+em,
+strong,
+ins,
+del {
+    padding: 0;
+    margin: 0;
+}
+
+/* 布局容器，这里必须给100% */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: 12px;
+    line-height: 1;
+    color: #000;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.card-main {
+    margin-top: 20px;
+}
+
+.el-pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+// 对话框头部样式
+.el-dialog {
+
+    // 顶部颜色
+    .el-dialog__header {
+        color: #fff;
+        background: linear-gradient(225deg, rgba(1, 198, 250, 1), rgba(20, 147, 250, 1));
+    }
+
+    .el-dialog__title,
+    .el-dialog__close {
+        color: #fff;
+    }
+}
+
+// 禁用按钮样式
+.forbidden {
+    color: red;
+}
